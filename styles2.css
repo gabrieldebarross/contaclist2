@@ -11,12 +11,79 @@ body {
     flex-direction: column;
 }
 
+
 .main-title {
     color: #165050;
     text-shadow: 0px 2px 2px white;
 }
 
+
+/* Parte da tag UL & imagem de fundo do flex container */
 .list {
     background-color: white;
-    height: 450px;
+    height: 300px;
+    background-image: url(imagens/thumb02.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 50%;
+    padding: 0; 
 }
+
+/* Parte da imagem de perfil do contato */
+.list-item__image img {
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    opacity: 90%;
+    max-width: 70px;
+    min-width: 50px;
+    margin: 115px 110px 0;
+
+}
+
+.list-item__image img:hover {
+    opacity: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.list-item {
+    list-style-type: none;
+}
+
+/* Parte do conteudo-content */
+.list-item__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item__name {
+    color: #165050;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.list-item__email {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Parte da Action`s */
+.list-item__action {
+    background-color: rgb(204, 204, 204);
+    margin: 15px 0 0 0;
+    padding: 10px 100px;
+}
+
+.list-item__action a img{
+    opacity: 70%;
+    padding: 0 15px;
+}
+
+.list-item__action:hover a img{
+    opacity: 100%;
+}
+
+
